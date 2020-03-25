@@ -1,0 +1,22 @@
+$breakpoints: (
+  xsmall: 460px,
+  small: 640px,
+  medium: 800px,
+  large: 1024px,
+  xlarge: 1280px,
+  xxlarge: 1440px
+);
+
+$colors: (
+  primary: #1976d2,
+  primary-medium: #2095f2,
+  primary-light: #03a9f4,
+  secondary: #f95d5a,
+  heading: #333333,
+  text: #727272,
+  text-secondary: #ffffff,
+  text-minibar: #dddddd,
+  bg-primary: #1976d2,
+  bg-secondary: #ffffff,
+  bg-minor: #f5f5f5
+);
