@@ -11,3 +11,14 @@
     }
   }
 }
+
+@mixin icon-round($font-size, $bg-color, $font-color, $multiplier) {
+  display: block;
+  font-size: $font-size;
+  width: $font-size * $multiplier;
+  line-height: $font-size * $multiplier;
+  background-color: $bg-color;
+  color: $font-color;
+  text-align: center;
+  border-radius: 50%;
+}

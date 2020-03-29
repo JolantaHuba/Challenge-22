@@ -2,3 +2,7 @@
 @import 'base/_reset';
 @import 'abstracts/_variables';
 @import 'abstracts/_mixins';
+@import 'components/components.scss';
+
+@import 'layout/minibar';
+@import 'layout/menu';

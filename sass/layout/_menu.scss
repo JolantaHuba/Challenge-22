@@ -1,0 +1,149 @@
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  &__logo {
+    width: 8rem;
+    padding: 0.5rem 0;
+    @include mq(large) {
+      width: 10rem;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    color: map-get($colors, secondary);
+    font-size: 2.3rem;
+    background-color: transparent;
+    border: none;
+    z-index: 999;
+    cursor: pointer;
+    &-close {
+      display: none;
+      color: map-get($colors, bg-secondary);
+    }
+    &.active &-open {
+      display: none;
+    }
+    &.active &-close {
+      display: block;
+    }
+    @include mq(large) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: map-get($colors, secondary);
+    clip-path: circle(0% at 90% 4em);
+    transition: background-color 0.5s, clip-path 0.5s;
+    &.active {
+      clip-path: circle(80%);
+    }
+    @include mq(large) {
+      clip-path: none;
+      transition: none;
+      position: sticky;
+      top: 0;
+      left: 0;
+      bottom: auto;
+      right: auto;
+      flex-basis: 60%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      align-self: stretch;
+      background-color: transparent;
+    }
+  }
+
+  &__item {
+    flex-basis: 100%;
+    @include mq('xsmall', 'orientation: landscape') {
+      flex-basis: 34%;
+    }
+    &--search {
+      display: none;
+    }
+    @include mq(large) {
+      flex-basis: auto;
+      display: flex;
+      &--search {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__search {
+    &-btn {
+      border: none;
+      background-color: transparent;
+    }
+    &-icon {
+      cursor: pointer;
+      @include icon-round(
+        0.9rem,
+        map-get($colors, secondary),
+        map-get($colors, text-secondary),
+        2
+      );
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 240%;
+    color: map-get($colors, text-secondary);
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    @include mq(large) {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      color: map-get($colors, heading);
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 4px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: map-get($colors, secondary);
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      &:hover {
+        color: map-get($colors, secondary);
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+}
