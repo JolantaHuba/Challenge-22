@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     color: map-get($colors, text-minibar);
     font-size: 0.8rem;
-    @include mq(large) {
+    @include mq(small) {
       font-size: 0.9rem;
     }
   }

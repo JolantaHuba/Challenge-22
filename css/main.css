@@ -199,6 +199,11 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -231,7 +236,7 @@ a {
   font-size: 0.8rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .minibar__contacts {
     font-size: 0.9rem;
   }
@@ -296,13 +301,14 @@ a {
 }
 
 .menu__logo {
-  width: 8rem;
-  padding: 0.5rem 0;
+  width: 9rem;
+  margin: 0.5rem 0;
 }
 
 @media (min-width: 64em) {
   .menu__logo {
     width: 10rem;
+    margin: 1rem 0;
   }
 }
 
@@ -455,7 +461,7 @@ a {
   position: relative;
   display: block;
   font-size: 1.2rem;
-  line-height: 240%;
+  line-height: 250%;
   color: #ffffff;
   font-weight: 500;
   text-align: center;
