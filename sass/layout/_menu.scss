@@ -2,12 +2,13 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 998;
+  background-color: map-get($colors, bg-secondary);
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
   }
 
   &__logo {
@@ -43,16 +44,16 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     background-color: map-get($colors, secondary);
     clip-path: circle(0% at 90% 4em);
     transition: background-color 0.5s, clip-path 0.5s;

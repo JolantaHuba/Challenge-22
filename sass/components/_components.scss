@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  padding: 1.3em 2.3em;
+  background-color: map-get($colors, primary-medium);
+  color: map-get($colors, text-secondary);
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: map-get($colors, secondary);
+  }
+  &--icon span {
+    font-size: 1.3em;
+    margin-left: 0.6em;
+    vertical-align: -0.15em;
+  }
+}

@@ -207,6 +207,31 @@ a {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  padding: 1.3em 2.3em;
+  background-color: #2095f2;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f95d5a;
+}
+
+.btn--icon span {
+  font-size: 1.3em;
+  margin-left: 0.6em;
+  vertical-align: -0.15em;
 }
 
 .minibar {
@@ -223,7 +248,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.3rem 5%;
+  padding: 0.3rem 1rem;
 }
 
 .minibar__contacts {
@@ -285,6 +310,8 @@ a {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 998;
+  background-color: #ffffff;
 }
 
 .menu__container {
@@ -297,7 +324,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5%;
 }
 
 .menu__logo {
@@ -344,6 +370,11 @@ a {
 }
 
 .menu__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,11 +388,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: #f95d5a;
   -webkit-clip-path: circle(0% at 90% 4em);
           clip-path: circle(0% at 90% 4em);
@@ -501,6 +527,140 @@ a {
   }
   .menu__link:hover::before {
     opacity: 1;
+  }
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../../images/header_mobile.jpg) no-repeat 50% 30%/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7)), url(../../images/header_mobile.jpg) no-repeat 50% 30%/cover;
+  padding: 30% 0;
+  text-align: center;
+  position: relative;
+}
+
+@media (min-width: 28.75em) and (orientation: landscape) {
+  .header {
+    padding: 13% 0 15%;
+  }
+}
+
+@media (min-width: 40em) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../../images/header_mobile_land.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(../../images/header_mobile_land.jpg);
+  }
+}
+
+@media (min-width: 64em) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../../images/header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(../../images/header.jpg);
+    font-size: 1.2rem;
+  }
+}
+
+.header__title {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__title--deco {
+  color: #03a9f4;
+}
+
+.header__title--no-break {
+  display: block;
+}
+
+@media (min-width: 40em) {
+  .header__title--no-break {
+    display: inline;
+  }
+}
+
+.header__text {
+  font-size: 0.9em;
+  margin: 2rem 0 3rem;
+  color: #ffffff;
+}
+
+@media (min-width: 28.75em) and (orientation: landscape) {
+  .header__text {
+    margin: 1.5rem 0 2.5rem;
+  }
+}
+
+.header__mouse {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .header__mouse {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 1em;
+    height: 1.9em;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+  }
+  .header__mouse-scroll {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: block;
+    width: 0.1em;
+    height: 0.4em;
+    background-color: #ffffff;
+    -webkit-animation: mouse-scroll 2s infinite;
+            animation: mouse-scroll 2s infinite;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    top: 55%;
+  }
+  100% {
+    opacity: 0;
+    top: 55%;
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    top: 55%;
+  }
+  100% {
+    opacity: 0;
+    top: 55%;
   }
 }
 /*# sourceMappingURL=main.css.map */

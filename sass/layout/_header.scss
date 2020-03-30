@@ -1,0 +1,93 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7)),
+    url(../../images/header_mobile.jpg) no-repeat 50% 30% / cover;
+  padding: 30% 0;
+  text-align: center;
+  position: relative;
+
+  @include mq(xsmall, 'orientation: landscape') {
+    padding: 13% 0 15%;
+  }
+
+  @include mq(small) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
+      url(../../images/header_mobile_land.jpg);
+  }
+
+  @include mq(large) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
+      url(../../images/header.jpg);
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: map-get($colors, text-secondary);
+    &--deco {
+      color: map-get($colors, primary-light);
+    }
+    &--no-break {
+      display: block;
+      @include mq(small) {
+        display: inline;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 0.9em;
+    margin: 2rem 0 3rem;
+    color: map-get($colors, text-secondary);
+    @include mq(xsmall, 'orientation: landscape') {
+      margin: 1.5rem 0 2.5rem;
+    }
+  }
+
+  &__mouse {
+    display: none;
+    @include mq(large) {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 5%;
+      transform: translateX(-50%);
+      width: 1em;
+      height: 1.9em;
+      border: 1px solid map-get($colors, bg-secondary);
+      border-radius: 50px;
+      &-scroll {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 0.1em;
+        height: 0.4em;
+        background-color: map-get($colors, bg-secondary);
+        animation: mouse-scroll 2s infinite;
+      }
+    }
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    top: 55%;
+  }
+  100% {
+    opacity: 0;
+    top: 55%;
+  }
+}
