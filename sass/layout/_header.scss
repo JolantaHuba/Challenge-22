@@ -1,9 +1,9 @@
 .header {
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.7)),
     url(../../images/header_mobile.jpg) no-repeat 50% 30% / cover;
   padding: 30% 0;
   text-align: center;
-  position: relative;
 
   @include mq(xsmall, 'orientation: landscape') {
     padding: 13% 0 15%;

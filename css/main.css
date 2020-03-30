@@ -199,6 +199,10 @@ a {
   text-decoration: none;
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -216,7 +220,7 @@ a {
   text-transform: uppercase;
   border: none;
   border-radius: 6px;
-  padding: 1.3em 2.3em;
+  padding: 1.2em 2.2em;
   background-color: #2095f2;
   color: #ffffff;
   -webkit-transition: 0.2s;
@@ -326,13 +330,13 @@ a {
           align-items: center;
 }
 
-.menu__logo {
+.menu__logo-img {
   width: 9rem;
   margin: 0.5rem 0;
 }
 
 @media (min-width: 64em) {
-  .menu__logo {
+  .menu__logo-img {
     width: 10rem;
     margin: 1rem 0;
   }
@@ -347,7 +351,6 @@ a {
   background-color: transparent;
   border: none;
   z-index: 999;
-  cursor: pointer;
 }
 
 .menu__burger-close {
@@ -373,8 +376,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,9 +391,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f95d5a;
   -webkit-clip-path: circle(0% at 90% 4em);
           clip-path: circle(0% at 90% 4em);
+  background-color: #f95d5a;
   -webkit-transition: background-color 0.5s, -webkit-clip-path 0.5s;
   transition: background-color 0.5s, -webkit-clip-path 0.5s;
   transition: background-color 0.5s, clip-path 0.5s;
@@ -504,7 +507,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #333333;
   }
   .menu__link::before {
@@ -531,11 +534,11 @@ a {
 }
 
 .header {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../../images/header_mobile.jpg) no-repeat 50% 30%/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.7)), url(../../images/header_mobile.jpg) no-repeat 50% 30%/cover;
   padding: 30% 0;
   text-align: center;
-  position: relative;
 }
 
 @media (min-width: 28.75em) and (orientation: landscape) {

@@ -1,3 +1,7 @@
+.scroll-lock {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -15,7 +19,7 @@
   text-transform: uppercase;
   border: none;
   border-radius: 6px;
-  padding: 1.3em 2.3em;
+  padding: 1.2em 2.2em;
   background-color: map-get($colors, primary-medium);
   color: map-get($colors, text-secondary);
   transition: 0.2s;

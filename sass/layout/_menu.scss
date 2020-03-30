@@ -11,7 +11,7 @@
     align-items: center;
   }
 
-  &__logo {
+  &__logo-img {
     width: 9rem;
     margin: 0.5rem 0;
     @include mq(large) {
@@ -27,7 +27,6 @@
     background-color: transparent;
     border: none;
     z-index: 999;
-    cursor: pointer;
     &-close {
       display: none;
       color: map-get($colors, bg-secondary);
@@ -47,15 +46,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: map-get($colors, secondary);
     clip-path: circle(0% at 90% 4em);
+    background-color: map-get($colors, secondary);
     transition: background-color 0.5s, clip-path 0.5s;
     &.active {
       clip-path: circle(80%);
@@ -125,7 +124,7 @@
     @include mq(large) {
       display: flex;
       align-items: center;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: map-get($colors, heading);
       &::before {
         display: block;
