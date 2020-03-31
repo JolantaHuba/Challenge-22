@@ -1,7 +1,7 @@
 .header {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.7)),
-    url(../../images/header_mobile.jpg) no-repeat 50% 30% / cover;
+    url(../images/header_mobile.jpg) no-repeat 50% 30% / cover;
   padding: 30% 0;
   text-align: center;
 
@@ -11,13 +11,13 @@
 
   @include mq(small) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
-      url(../../images/header_mobile_land.jpg);
+      url(../images/header_mobile_land.jpg);
   }
 
   @include mq(large) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
-      url(../../images/header.jpg);
-    font-size: 1.2rem;
+      url(../images/header.jpg);
+    font-size: 1.3rem;
   }
 
   &__title {

@@ -15,7 +15,7 @@
     width: 9rem;
     margin: 0.5rem 0;
     @include mq(large) {
-      width: 10rem;
+      max-width: 10rem;
       margin: 1rem 0;
     }
   }
@@ -67,7 +67,6 @@
       left: 0;
       bottom: auto;
       right: auto;
-      flex-basis: 60%;
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
@@ -125,6 +124,7 @@
       display: flex;
       align-items: center;
       font-size: 0.8rem;
+      margin-right: 1.5rem;
       color: map-get($colors, heading);
       &::before {
         display: block;

@@ -11,6 +11,13 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+  &--smaller {
+    max-width: 1024px;
+    margin: 3rem auto;
+    @include mq(large) {
+      margin: 5rem auto;
+    }
+  }
 }
 
 .btn {

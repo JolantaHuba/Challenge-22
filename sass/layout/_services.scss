@@ -1,0 +1,144 @@
+.services {
+  @include mq(large) {
+    font-size: 1.2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include mq(large) {
+      &::before,
+      &::after {
+        display: block;
+        content: '';
+        height: 8em;
+        flex-grow: 1;
+      }
+      &::before {
+        background-color: map-get($colors, primary);
+      }
+      &::after {
+        background-color: map-get($colors, primary-light);
+      }
+    }
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3);
+    height: 6.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0.25em;
+    color: map-get($colors, text-secondary);
+    background-color: map-get($colors, primary);
+    &:nth-child(even) {
+      background-color: map-get($colors, primary-light);
+    }
+
+    @include mq(large) {
+      flex-basis: calc(100% / 6);
+      height: 8em;
+      max-width: 10em;
+      padding: 1em 1.5em;
+    }
+  }
+
+  &__icon {
+    display: block;
+    font-size: 1.7em;
+    padding-bottom: 0.25em;
+    @include mq(large) {
+      font-size: 2em;
+    }
+  }
+
+  &__name {
+    display: block;
+    font-size: 0.75em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    margin: 0.8em 1%;
+    &--desktop {
+      display: none;
+    }
+    @include mq(small) {
+      flex-basis: 48%;
+    }
+    @include mq(large) {
+      flex-basis: calc(100% / 3 - 2%);
+      &--desktop {
+        display: flex;
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    flex-basis: 20%;
+  }
+
+  &__text-wrapper {
+    flex-basis: 80%;
+  }
+
+  &__icon {
+    margin: 0 auto;
+    @include icon-round(
+      1em,
+      map-get($colors, secondary),
+      map-get($colors, text-secondary),
+      2.2
+    );
+  }
+
+  &__name {
+    display: block;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: map-get($colors, heading);
+    margin-bottom: 0.8em;
+  }
+
+  &__desc {
+    font-size: 0.85em;
+    color: map-get($colors, text);
+  }
+}
+
+.services {
+  &__video-wrapper {
+    min-height: 30vh;
+    overflow: hidden;
+    position: relative;
+    @include mq(xsmall, 'orientation: landscape') {
+      height: 50vh;
+    }
+  }
+
+  &__video {
+    display: block;
+    max-width: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include mq(xsmall, 'orientation: landscape') {
+      max-width: 100%;
+      top: -40%;
+    }
+    @include mq(xlarge) {
+      top: -50%;
+    }
+  }
+}
