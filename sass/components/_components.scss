@@ -40,3 +40,29 @@
     vertical-align: -0.15em;
   }
 }
+
+.section-header {
+  text-align: center;
+  &__title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: map-get($colors, heading);
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+
+  &__desc {
+    font-size: 0.85em;
+    color: map-get($colors, text);
+    margin-bottom: 1.2em;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    width: 2em;
+    height: 2.5px;
+    background-color: map-get($colors, primary-light);
+    margin: 0 auto 2.4em;
+  }
+}

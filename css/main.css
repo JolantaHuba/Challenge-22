@@ -249,6 +249,33 @@ a {
   vertical-align: -0.15em;
 }
 
+.section-header {
+  text-align: center;
+}
+
+.section-header__title {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.section-header__desc {
+  font-size: 0.85em;
+  color: #727272;
+  margin-bottom: 1.2em;
+}
+
+.section-header::after {
+  display: block;
+  content: '';
+  width: 2em;
+  height: 2.5px;
+  background-color: #03a9f4;
+  margin: 0 auto 2.4em;
+}
+
 .minibar {
   background-color: #1976d2;
 }

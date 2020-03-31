@@ -13,6 +13,7 @@
 
   <body>
     <div class="wrapper">
+      <!-- MINIBAR -->
       <aside class="minibar">
         <div class="minibar__container container">
           <div class="minibar__contacts">
@@ -54,6 +55,7 @@
         </div>
       </aside>
 
+      <!-- MENU -->
       <nav class="menu">
         <div class="menu__container container">
           <a class="menu__logo" href="#"
@@ -90,6 +92,7 @@
         </div>
       </nav>
 
+      <!-- HEADER -->
       <header class="header">
         <div class="header__container container">
           <h1 class="header__title">
@@ -108,6 +111,7 @@
         </div>
       </header>
 
+      <!-- SERVICES -->
       <section class="services">
         <ul class="services__list">
           <li class="services__item">
@@ -250,6 +254,169 @@
         <div class="services__video-wrapper">
           <video class="services__video" src="images/Mickey.ogv" muted></video>
         </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="portfolio container container--smaller">
+        <header class="section-header">
+          <h2 class="section-header__title">Portfolio</h2>
+          <p class="section-header__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            aliquam.
+          </p>
+        </header>
+
+        <div class="portfolio__controls">
+          <button class="portfolio__control" data-category="all">All</button>
+          <button class="portfolio__control" data-category="photo">
+            Photography
+          </button>
+          <button class="portfolio__control" data-category="brand">
+            Brand identity
+          </button>
+          <button class="portfolio__control" data-category="ui">UI/UX</button>
+          <button class="portfolio__control" data-category="webdev">
+            Web Development
+          </button>
+        </div>
+
+        <!-- <div class="portfolio__items">
+          <div class="portfolio__item" data-category="brand">
+            <img src="images/portfolio-1.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Bacard</span>
+              <span class="portfolio__item-desc">Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="webdev">
+            <img src="images/portfolio-2.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Book website</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="brand">
+            <img src="images/portfolio-3.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Kopi Luwak</span>
+              <span class="portfolio__item-desc">Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="ui">
+            <img src="images/portfolio-4.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Web design</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="webdev">
+            <img src="images/portfolio-5.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Web design</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="photo">
+            <img src="images/portfolio-6.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Green Tea</span>
+              <span class="portfolio__item-desc">Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="photo">
+            <img src="images/portfolio-7.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Swell</span>
+              <span class="portfolio__item-desc">Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="ui">
+            <img src="images/portfolio-8.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">Invitation</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="webdev">
+            <img src="images/portfolio-9.jpg" alt="" />
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__icon icon-zoom_in"></span>
+                </button>
+                <a href="" class="portfolio__item-control">
+                  <span class="portfolio__icon icon-link"></span>
+                </a>
+              </div>
+              <span class="portfolio__item-name">B like Book</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+            </div>
+          </div>
+        </div> -->
       </section>
     </div>
     <script src="js/main.js"></script>
