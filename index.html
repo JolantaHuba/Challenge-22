@@ -1,424 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smiley</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <!-- MINIBAR -->
-      <aside class="minibar">
-        <div class="minibar__container container">
-          <div class="minibar__contacts">
-            <p class="minibar__contact">
-              <span class="minibar__contact-icon icon-phone"></span>123 456 7890
-            </p>
-            <p class="minibar__contact">
-              <span class="minibar__contact-icon icon-envelope"></span
-              >contact@smiley.com
-            </p>
-          </div>
-          <ul class="minibar__icons">
-            <li>
-              <a href="http://www.facebook.com"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smiley</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- MINIBAR -->
+    <aside class="minibar">
+      <div class="minibar__container container">
+        <div class="minibar__contacts">
+          <p class="minibar__contact">
+            <span class="minibar__contact-icon icon-phone"></span>123 456 7890
+          </p>
+          <p class="minibar__contact">
+            <span class="minibar__contact-icon icon-envelope"></span>contact@smiley.com
+          </p>
+        </div>
+        <ul class="minibar__icons">
+          <li>
+            <a href="http://www.facebook.com"
                 ><span class="minibar__round-icon icon-facebook"></span
               ></a>
-            </li>
-            <li>
-              <a href="http://www.twitter.com"
+          </li>
+          <li>
+            <a href="http://www.twitter.com"
                 ><span class="minibar__round-icon icon-twitter"></span
               ></a>
-            </li>
-            <li>
-              <a href="http://www.pinterest.com"
+          </li>
+          <li>
+            <a href="http://www.pinterest.com"
                 ><span class="minibar__round-icon icon-pinterest-p"></span
               ></a>
-            </li>
-            <li>
-              <a href="http://www.google.com"
+          </li>
+          <li>
+            <a href="http://www.google.com"
                 ><span class="minibar__round-icon icon-google-plus"></span
               ></a>
-            </li>
-            <li>
-              <a href="http://www.vimeo.com"
+          </li>
+          <li>
+            <a href="http://www.vimeo.com"
                 ><span class="minibar__round-icon icon-vimeo"></span
               ></a>
-            </li>
-          </ul>
-        </div>
-      </aside>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-      <!-- MENU -->
-      <nav class="menu">
-        <div class="menu__container container">
-          <a class="menu__logo" href="#"
+    <!-- MENU -->
+    <nav class="menu">
+      <div class="menu__container container">
+        <a class="menu__logo" href="#"
             ><img src="images/logo.png" alt="Smiley logo" class="menu__logo-img"
           /></a>
 
-          <button class="menu__burger" aria-label="Menu" aria-expanded="false">
-            <span class="menu__burger-open icon-bars"></span>
-            <span class="menu__burger-close icon-close"></span>
-          </button>
+        <button class="menu__burger" aria-label="Menu" aria-expanded="false">
+          <span class="menu__burger-open icon-bars"></span>
+          <span class="menu__burger-close icon-close"></span>
+        </button>
 
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Services</a>
-            </li>
-            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Portfolio</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Pricing</a>
-            </li>
-            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Contact Us</a>
-            </li>
-            <li class="menu__item menu__item--search">
-              <button class="menu__search-btn">
-                <span class="menu__search-icon icon-search"></span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Services</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Portfolio</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Pricing</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact Us</a>
+          </li>
+          <li class="menu__item menu__item--search">
+            <button class="menu__search-btn">
+              <span class="menu__search-icon icon-search"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <!-- HEADER -->
-      <header class="header">
-        <div class="header__container container">
-          <h1 class="header__title">
-            <span class="header__title--deco">Smiley </span>creative
-            <span class="header__title--no-break">multi-purpose</span>
-          </h1>
-          <p class="header__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <button class="btn btn--icon">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__title">
+          <span class="header__title--deco">Smiley </span>creative
+          <span class="header__title--no-break">multi-purpose</span>
+        </h1>
+        <p class="header__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <a href="" class="btn btn--icon">
             Learn more<span class="icon-arrow-right2"></span>
-          </button>
-        </div>
-        <div class="header__mouse">
-          <span class="header__mouse-scroll"></span>
-        </div>
+          </a>
+      </div>
+      <div class="header__mouse">
+        <span class="header__mouse-scroll"></span>
+      </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <ul class="services__list">
+        <li class="services__item">
+          <span class="services__icon icon-filter_vintage"></span>
+          <span class="services__name">2d and 3d animation</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon icon-brightness_low"></span>
+          <span class="services__name">Company brand identity</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon icon-devices"></span>
+          <span class="services__name">Responsive web design</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon icon-globe"></span>
+          <span class="services__name">Web development</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon icon-apple"></span>
+          <span class="services__name">App development</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon icon-camera"></span>
+          <span class="services__name">Photo & videography</span>
+        </li>
+      </ul>
+
+      <ul class="features container container--smaller">
+        <li class="features__item">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-pencil"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Creative writing</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-heart"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Print design</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-share2"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Social media</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-crop"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Pixel perfect web</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-settings"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Front end development</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-brush"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Graphic design</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item features__item--desktop">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-volume-mute"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Audio and video</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item features__item--desktop">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-flight_takeoff"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">Optimized for speed</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+        <li class="features__item features__item--desktop">
+          <div class="features__icon-wrapper">
+            <span class="features__icon icon-access_time"></span>
+          </div>
+          <div class="features__text-wrapper">
+            <strong class="features__name">24/7 human support</strong>
+            <p class="features__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              eligendi, voluptates recusandae officiis obcaecati maxime.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="services__video-wrapper">
+        <video class="services__video" src="images/video.ogv" muted></video>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio container container--smaller">
+      <header class="section-header">
+        <h2 class="section-header__title">Portfolio</h2>
+        <p class="section-header__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+          aliquam.
+        </p>
       </header>
 
-      <!-- SERVICES -->
-      <section class="services">
-        <ul class="services__list">
-          <li class="services__item">
-            <span class="services__icon icon-filter_vintage"></span>
-            <span class="services__name">2d and 3d animation</span>
-          </li>
-          <li class="services__item">
-            <span class="services__icon icon-brightness_low"></span>
-            <span class="services__name">Company brand identity</span>
-          </li>
-          <li class="services__item">
-            <span class="services__icon icon-devices"></span>
-            <span class="services__name">Responsive web design</span>
-          </li>
-          <li class="services__item">
-            <span class="services__icon icon-globe"></span>
-            <span class="services__name">Web development</span>
-          </li>
-          <li class="services__item">
-            <span class="services__icon icon-apple"></span>
-            <span class="services__name">App development</span>
-          </li>
-          <li class="services__item">
-            <span class="services__icon icon-camera"></span>
-            <span class="services__name">Photo & videography</span>
-          </li>
-        </ul>
+      <div class="portfolio__controls">
+        <button class="portfolio__control active" data-category="all">
+          All
+        </button>
+        <button class="portfolio__control" data-category="photo">
+          Photography
+        </button>
+        <button class="portfolio__control" data-category="brand">
+          Brand identity
+        </button>
+        <button class="portfolio__control" data-category="ui">UI/UX</button>
+        <button class="portfolio__control" data-category="webdev">
+          Web Development
+        </button>
+      </div>
 
-        <ul class="features container container--smaller">
-          <li class="features__item">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-pencil"></span>
+      <div class="portfolio__items">
+        <div class="portfolio__item" data-category="brand">
+          <img class="portfolio__img" src="images/portfolio-1.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
             </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Creative writing</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-heart"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Print design</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-share2"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Social media</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-crop"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Pixel perfect web</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-settings"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Front end development</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-brush"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Graphic design</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item features__item--desktop">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-volume-mute"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Audio and video</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item features__item--desktop">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-flight_takeoff"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">Optimized for speed</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-          <li class="features__item features__item--desktop">
-            <div class="features__icon-wrapper">
-              <span class="features__icon icon-access_time"></span>
-            </div>
-            <div class="features__text-wrapper">
-              <strong class="features__name">24/7 human support</strong>
-              <p class="features__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                eligendi, voluptates recusandae officiis obcaecati maxime.
-              </p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="services__video-wrapper">
-          <video class="services__video" src="images/Mickey.ogv" muted></video>
+            <span class="portfolio__item-name">Bacard</span>
+            <span class="portfolio__item-desc">Photoshop</span>
+          </div>
         </div>
-      </section>
+        <div class="portfolio__item" data-category="webdev">
+          <img class="portfolio__img" src="images/portfolio-2.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Book website</span>
+            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="brand">
+          <img class="portfolio__img" src="images/portfolio-3.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Kopi Luwak</span>
+            <span class="portfolio__item-desc">Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="ui">
+          <img class="portfolio__img" src="images/portfolio-4.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Web design</span>
+            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="webdev">
+          <img class="portfolio__img" src="images/portfolio-5.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Web design</span>
+            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="photo">
+          <img class="portfolio__img" src="images/portfolio-6.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Green Tea</span>
+            <span class="portfolio__item-desc">Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="photo">
+          <img class="portfolio__img" src="images/portfolio-7.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Swell</span>
+            <span class="portfolio__item-desc">Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="ui">
+          <img class="portfolio__img" src="images/portfolio-8.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">Invitation</span>
+            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+          </div>
+        </div>
+        <div class="portfolio__item" data-category="webdev">
+          <img class="portfolio__img" src="images/portfolio-9.jpg" alt="" />
+          <div class="portfolio__item-overlay">
+            <div class="portfolio__item-controls">
+              <button class="portfolio__item-control">
+                <span class="portfolio__item-icon icon-zoom_in"></span>
+              </button>
+              <a href="" class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-link"></span>
+                </a>
+            </div>
+            <span class="portfolio__item-name">B like Book</span>
+            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">Learn more</a>
+    </section>
 
-      <!-- PORTFOLIO -->
-      <section class="portfolio container container--smaller">
-        <header class="section-header">
-          <h2 class="section-header__title">Portfolio</h2>
+    <section class="team">
+      <div class="team__wrapper container container--smaller">
+        <header class="section-header section-header--secondary">
+          <h2 class="section-header__title">The team</h2>
           <p class="section-header__desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
             aliquam.
           </p>
         </header>
-
-        <div class="portfolio__controls">
-          <button class="portfolio__control" data-category="all">All</button>
-          <button class="portfolio__control" data-category="photo">
-            Photography
-          </button>
-          <button class="portfolio__control" data-category="brand">
-            Brand identity
-          </button>
-          <button class="portfolio__control" data-category="ui">UI/UX</button>
-          <button class="portfolio__control" data-category="webdev">
-            Web Development
-          </button>
+        <div class="team__members">
+          <div class="team__member">
+            <img src="images/person-1.jpg" alt="Faridul Haque photo" class="team__member-img">
+            <div class="team__member-info">
+              <span class="team__member-name">Faridul Haque</span>
+              <span class="team__member-job">Graphic designer</span>
+              <ul class="team__member-socials">
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://facebook.com"><span class="icon-facebook"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://dribble.com"><span class="icon-dribbble"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://behance.com"><span class="icon-behance"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://pinterest.com"><span class="icon-pinterest-p"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="team__member">
+            <img src="images/person-2.jpg" alt="Angelina Faud Jolie photo" class="team__member-img">
+            <div class="team__member-info">
+              <span class="team__member-name">Angelina Faud Jolie</span>
+              <span class="team__member-job">Fashion designer</span>
+              <ul class="team__member-socials">
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://facebook.com"><span class="icon-facebook"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://dribble.com"><span class="icon-dribbble"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://behance.com"><span class="icon-behance"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://pinterest.com"><span class="icon-pinterest-p"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="team__member">
+            <img src="images/person-3.jpg" alt="Farhan Al Fuad photo" class="team__member-img">
+            <div class="team__member-info">
+              <span class="team__member-name">Farhan Al Fuad</span>
+              <span class="team__member-job">UI/UX designer</span>
+              <ul class="team__member-socials">
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://facebook.com"><span class="icon-facebook"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://dribble.com"><span class="icon-dribbble"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://behance.com"><span class="icon-behance"></span></a></li>
+                <li class="team__member-social">
+                  <a class="team__member-link" href="https://pinterest.com"><span class="icon-pinterest-p"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- <div class="portfolio__items">
-          <div class="portfolio__item" data-category="brand">
-            <img src="images/portfolio-1.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Bacard</span>
-              <span class="portfolio__item-desc">Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="webdev">
-            <img src="images/portfolio-2.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Book website</span>
-              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="brand">
-            <img src="images/portfolio-3.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Kopi Luwak</span>
-              <span class="portfolio__item-desc">Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="ui">
-            <img src="images/portfolio-4.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Web design</span>
-              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="webdev">
-            <img src="images/portfolio-5.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Web design</span>
-              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="photo">
-            <img src="images/portfolio-6.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Green Tea</span>
-              <span class="portfolio__item-desc">Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="photo">
-            <img src="images/portfolio-7.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Swell</span>
-              <span class="portfolio__item-desc">Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="ui">
-            <img src="images/portfolio-8.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">Invitation</span>
-              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
-            </div>
-          </div>
-          <div class="portfolio__item" data-category="webdev">
-            <img src="images/portfolio-9.jpg" alt="" />
-            <div class="portfolio__item-overlay">
-              <div class="portfolio__item-controls">
-                <button class="portfolio__item-control">
-                  <span class="portfolio__icon icon-zoom_in"></span>
-                </button>
-                <a href="" class="portfolio__item-control">
-                  <span class="portfolio__icon icon-link"></span>
-                </a>
-              </div>
-              <span class="portfolio__item-name">B like Book</span>
-              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
-            </div>
-          </div>
-        </div> -->
-      </section>
-    </div>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

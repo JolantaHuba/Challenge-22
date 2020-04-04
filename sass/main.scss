@@ -4,7 +4,9 @@
 @import 'base/_reset';
 @import 'components/_components.scss';
 
-@import 'layout/minibar';
-@import 'layout/menu';
-@import 'layout/header';
-@import 'layout/services';
+@import 'layout/_minibar';
+@import 'layout/_menu';
+@import 'layout/_header';
+@import 'layout/_services';
+@import 'layout/_portfolio';
+@import 'layout/_team';
