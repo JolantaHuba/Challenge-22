@@ -225,6 +225,11 @@ a {
   }
 }
 
+.container--bar {
+  max-width: 1024px;
+  padding: 2.5rem .5rem;
+}
+
 .btn {
   display: block;
   font-family: 'Roboto', sans-serif;
@@ -1400,16 +1405,24 @@ a {
           align-items: center;
 }
 
-.clients__cards {
+.clients__images {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .clients__client {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 .3em;
 }
 
 .clients__client.active .clients__client-img {
@@ -1425,7 +1438,9 @@ a {
 
 @media (min-width: 40em) {
   .clients__client {
-    margin: .7em;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
+    margin: .5em 0.3em;
   }
 }
 
@@ -1435,13 +1450,15 @@ a {
   border: 0.2em solid #03a9f4;
   border-radius: 50%;
   margin: 0 auto;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
   cursor: pointer;
 }
 
 @media (min-width: 48em) {
   .clients__client-img {
     border-width: .3em;
-    width: 90%;
+    width: 70%;
   }
 }
 
@@ -1454,8 +1471,8 @@ a {
 .clients__client-name {
   display: none;
   font-size: .9em;
-  margin-top: 1em;
-  margin-bottom: .3em;
+  margin-top: 1rem;
+  margin-bottom: .3rem;
 }
 
 .clients__client-job {
@@ -1464,22 +1481,56 @@ a {
   font-weight: 300;
 }
 
-.clients__quote {
-  display: none;
-  font-size: .85em;
+.clients__quotes {
   border: 1px solid #ffffff;
-  text-align: center;
   margin-top: 1.5em;
-  padding: 1em;
 }
 
 @media (min-width: 40em) {
-  .clients__quote {
+  .clients__quotes {
     width: 80%;
   }
 }
 
+.clients__quote {
+  display: none;
+  font-size: .85em;
+  text-align: center;
+  padding: 1em;
+}
+
 .clients__quote.active {
   display: block;
+}
+
+.clients__logos {
+  background-color: #f5f5f5;
+}
+
+.clients__logos-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients__client-logo {
+  display: block;
+  width: 4em;
+  margin: .5em 1em;
+}
+
+@media (min-width: 28.75em) {
+  .clients__client-logo {
+    width: 5em;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

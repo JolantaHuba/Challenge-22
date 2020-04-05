@@ -95,7 +95,7 @@ const quotes = document.querySelectorAll('.clients__quote');
 function changeQuote() {
   document.querySelector('.clients__client.active').classList.remove('active');
   this.parentNode.classList.add('active');
-  // this.classList.add('active');
+
   quotes.forEach(quote => {
     if (this.dataset.author === quote.dataset.author) {
       quote.classList.add('active');
