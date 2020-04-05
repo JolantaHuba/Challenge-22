@@ -1,11 +1,14 @@
 @mixin mq($breakpoint, $other: null) {
   $size: map-get($breakpoints, $breakpoint);
   $base: 16px;
+
   @if ($other) {
     @media (min-width: #{$size/$base}em) and (#{$other}) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @media (min-width: #{$size/$base}em) {
       @content;
     }

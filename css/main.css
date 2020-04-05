@@ -1375,4 +1375,111 @@ a {
   font-size: 1em;
   margin-top: .3em;
 }
+
+.clients {
+  background-color: #1976d2;
+  color: #ffffff;
+}
+
+@media (min-width: 64em) {
+  .clients {
+    font-size: 1.2rem;
+  }
+}
+
+.clients__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients__client {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 .3em;
+}
+
+.clients__client.active .clients__client-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #ffffff;
+}
+
+.clients__client.active .clients__client-name,
+.clients__client.active .clients__client-job {
+  display: block;
+}
+
+@media (min-width: 40em) {
+  .clients__client {
+    margin: .7em;
+  }
+}
+
+.clients__client-img {
+  display: block;
+  width: 70%;
+  border: 0.2em solid #03a9f4;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .clients__client-img {
+    border-width: .3em;
+    width: 90%;
+  }
+}
+
+@media (min-width: 64em) {
+  .clients__client-img:hover {
+    border-color: #ffffff;
+  }
+}
+
+.clients__client-name {
+  display: none;
+  font-size: .9em;
+  margin-top: 1em;
+  margin-bottom: .3em;
+}
+
+.clients__client-job {
+  display: none;
+  font-size: .7em;
+  font-weight: 300;
+}
+
+.clients__quote {
+  display: none;
+  font-size: .85em;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin-top: 1.5em;
+  padding: 1em;
+}
+
+@media (min-width: 40em) {
+  .clients__quote {
+    width: 80%;
+  }
+}
+
+.clients__quote.active {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

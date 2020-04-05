@@ -1,0 +1,89 @@
+.clients {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, text-secondary);
+
+    @include mq(large) {
+        font-size: 1.2rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__cards {
+        display: flex;
+    }
+
+    &__client {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 .3em;
+
+        &.active &-img {
+            transform: scale(1.1);
+            border-color: map-get($colors, bg-secondary);
+        }
+
+        &.active &-name,
+        &.active &-job {
+            display: block;
+        }
+
+        @include mq(small) {
+            margin: .7em;
+        }
+    }
+
+    &__client-img {
+        display: block;
+        width: 70%;
+        border: .2em solid map-get($colors, primary-light);
+        border-radius: 50%;
+        margin: 0 auto;
+        // transition: border-color .2s;
+        cursor: pointer;
+
+        @include mq(medium) {
+            border-width: .3em;
+            width: 90%;
+        }
+
+        @include mq(large) {
+            &:hover {
+                border-color: map-get($colors, bg-secondary);
+            }
+        }
+    }
+
+    &__client-name {
+        display: none;
+        font-size: .9em;
+        margin-top: 1em;
+        margin-bottom: .3em;
+    }
+
+    &__client-job {
+        display: none;
+        font-size: .7em;
+        font-weight: 300;
+    }
+
+    &__quote {
+        display: none;
+        font-size: .85em;
+        border: 1px solid map-get($colors, bg-secondary);
+        text-align: center;
+        margin-top: 1.5em;
+        padding: 1em;
+
+        @include mq(small) {
+            width: 80%;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+}
