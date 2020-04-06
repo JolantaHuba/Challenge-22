@@ -1,0 +1,111 @@
+.pricing {
+    @include mq(large) {
+        font-size: 1.2rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__items {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+
+        @include mq(xsmall) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        padding: 2em 0;
+        margin-bottom: 2em;
+        transition: transform .2s;
+
+        @include mq(xsmall) {
+            font-size: .85rem;
+            margin: 0 .3em;
+        }
+
+        @include mq(small) {
+            font-size: 1rem;
+        }
+
+        @include mq(large) {
+            flex-basis: 30%;
+            font-size: 1.1rem;
+            margin: 0 .5em;
+
+            &:hover {
+                transform: scale(1.15);
+                z-index: 1;
+            }
+
+            &:hover &-header {
+                border-color: map-get($colors, secondary);
+            }
+        }
+
+        &-header {
+            flex-basis: 100%;
+            position: relative;
+            padding: 0 .8em 2em;
+            border-bottom: 1px solid rgba(map-get($colors, text), 0.3);
+            ;
+            transition: border-color .2s;
+        }
+
+        &-name {
+            font-size: 1.3em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &-desc {
+            font-size: .85em;
+            color: map-get($colors, text);
+            margin: .5em 0 1.5em;
+        }
+
+        &-price {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: map-get($colors, primary-medium);
+
+            &--small {
+                font-size: 0.5em;
+                font-weight: 500;
+            }
+        }
+
+        &-features {
+            flex-basis: 100%;
+            padding: 2em .8em;
+        }
+
+        &-feature {
+            color: map-get($colors, text);
+            font-size: .85em;
+            text-transform: uppercase;
+            margin-bottom: 1.1em;
+        }
+
+        &-btn {
+            align-self: flex-end;
+            font-size: 0.9em;
+            padding: .7em 2.5em;
+        }
+    }
+}
