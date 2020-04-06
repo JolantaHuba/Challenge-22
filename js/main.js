@@ -1,3 +1,5 @@
+"use strict"
+
 const burgerBtn = document.querySelector('.menu__burger');
 const menuList = document.querySelector('.menu__list');
 
@@ -89,22 +91,17 @@ window.addEventListener('scroll', () => {
 
 // Quotes
 
-const clientsImgs = document.querySelectorAll('.clients__client-img');
-const quotes = document.querySelectorAll('.clients__quote');
+const clientsImgs = document.querySelectorAll('.clients__image');
 
 function changeQuote() {
-  document.querySelector('.clients__client.active').classList.remove('active');
-  this.parentNode.classList.add('active');
+  const author = this.dataset.author;
+  const activeElements = document.querySelectorAll('.clients .active');
+  activeElements.forEach(element => element.classList.remove('active'));
 
-  quotes.forEach(quote => {
-    if (this.dataset.author === quote.dataset.author) {
-      quote.classList.add('active');
-    } else {
-      quote.classList.remove('active');
-    }
-  })
+  const newElements = document.querySelectorAll(`[data-author="${author}"]`);
+  newElements.forEach(element => element.classList.add('active'));
 }
 
 clientsImgs.forEach(clientImg => {
   clientImg.addEventListener('click', changeQuote);
-})
+});

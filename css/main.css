@@ -1413,77 +1413,83 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
-.clients__client {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  text-align: center;
-  text-transform: uppercase;
+.clients__image-wrapper {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 0 .5em;
 }
 
-.clients__client.active .clients__client-img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border-color: #ffffff;
-}
-
-.clients__client.active .clients__client-name,
-.clients__client.active .clients__client-job {
-  display: block;
-}
-
-@media (min-width: 40em) {
-  .clients__client {
+@media (min-width: 28.75em) {
+  .clients__image-wrapper {
     -ms-flex-preferred-size: 17%;
         flex-basis: 17%;
-    margin: .5em 0.3em;
   }
 }
 
-.clients__client-img {
+@media (min-width: 48em) {
+  .clients__image-wrapper {
+    margin: 0;
+  }
+}
+
+.clients__image {
+  width: 90%;
+  margin: 0 auto;
   display: block;
-  width: 70%;
   border: 0.2em solid #03a9f4;
   border-radius: 50%;
-  margin: 0 auto;
   -webkit-transition: border-color .2s;
   transition: border-color .2s;
   cursor: pointer;
 }
 
 @media (min-width: 48em) {
-  .clients__client-img {
+  .clients__image {
     border-width: .3em;
     width: 70%;
   }
 }
 
 @media (min-width: 64em) {
-  .clients__client-img:hover {
+  .clients__image:hover {
     border-color: #ffffff;
   }
 }
 
-.clients__client-name {
-  display: none;
-  font-size: .9em;
-  margin-top: 1rem;
-  margin-bottom: .3rem;
+.clients__image.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #ffffff;
 }
 
-.clients__client-job {
+.clients__name-wrapper {
   display: none;
-  font-size: .7em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clients__name-wrapper.active {
+  display: block;
+}
+
+.clients__name {
+  display: block;
+  font-size: 1.1em;
+  margin-top: 1.1em;
+  margin-bottom: .3em;
+}
+
+.clients__job {
+  display: block;
+  font-size: .8em;
   font-weight: 300;
 }
 
 .clients__quotes {
   border: 1px solid #ffffff;
-  margin-top: 1.5em;
+  margin-top: 1.3em;
 }
 
 @media (min-width: 40em) {
