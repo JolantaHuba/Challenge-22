@@ -17,7 +17,7 @@
   @include mq(large) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
       url(../images/header.jpg);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   &__container {
@@ -31,11 +31,14 @@
     font-weight: 700;
     text-transform: uppercase;
     color: map-get($colors, text-secondary);
+
     &--deco {
       color: map-get($colors, primary-light);
     }
+
     &--no-break {
       display: block;
+
       @include mq(small) {
         display: inline;
       }
@@ -46,6 +49,7 @@
     font-size: 0.9em;
     margin: 2rem 0 3rem;
     color: map-get($colors, text-secondary);
+
     @include mq(xsmall, 'orientation: landscape') {
       margin: 1.5rem 0 2.5rem;
     }
@@ -53,6 +57,7 @@
 
   &__mouse {
     display: none;
+
     @include mq(large) {
       display: block;
       position: absolute;
@@ -63,6 +68,7 @@
       height: 1.9em;
       border: 1px solid map-get($colors, bg-secondary);
       border-radius: 50px;
+
       &-scroll {
         position: absolute;
         top: 20%;
@@ -82,16 +88,20 @@
   0% {
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   55% {
     opacity: 1;
   }
+
   90% {
     opacity: 0;
     top: 55%;
   }
+
   100% {
     opacity: 0;
     top: 55%;

@@ -1,39 +1,49 @@
 .minibar {
   background-color: map-get($colors, primary);
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.3rem 1rem;
   }
+
   &__contacts {
     display: flex;
     flex-wrap: wrap;
     color: map-get($colors, text-minibar);
     font-size: 0.8rem;
+
     @include mq(small) {
       font-size: 0.9rem;
     }
+
+    @include mq(large) {
+      font-size: 0.85rem;
+    }
   }
+
   &__contact {
     margin-right: 1rem;
   }
+
   &__contact-icon {
     margin-right: 8px;
   }
+
   &__icons {
     display: flex;
     justify-content: center;
   }
+
   &__round-icon {
     margin: 2px;
     transition: color 0.2s, background-color 0.2s;
-    @include icon-round(
-      0.9rem,
+    @include icon-round(0.9rem,
       map-get($colors, bg-secondary),
       map-get($colors, primary),
-      1.6
-    );
+      1.6);
+
     @include mq(large) {
       &:hover {
         background-color: map-get($colors, secondary);

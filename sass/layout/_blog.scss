@@ -1,0 +1,73 @@
+.blog {
+    &__articles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mq(xsmall) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include mq(large) {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__article {
+        width: 90%;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+        margin-bottom: 1.5em;
+        cursor: default;
+
+        @include mq(xsmall) {
+            width: 32%;
+        }
+
+        @include mq(large) {
+            width: 30%;
+            margin-bottom: 0;
+
+            &:hover {
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+        }
+
+        &-desc {
+            position: relative;
+            padding: 1.8em 1em;
+        }
+
+        &-btn {
+            position: absolute;
+            top: -1em;
+            right: .5em;
+        }
+
+        &-name {
+            font-size: .9em;
+            text-transform: uppercase;
+            margin-bottom: .4em;
+            font-weight: 700;
+        }
+
+        &-author {
+            display: block;
+            font-size: .75em;
+            color: map-get($colors, text);
+            margin-bottom: 1.5em;
+        }
+
+        &-shortcut {
+            font-size: .85em;
+            color: map-get($colors, text);
+        }
+    }
+
+}

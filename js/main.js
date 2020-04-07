@@ -2,6 +2,7 @@
 
 const burgerBtn = document.querySelector('.menu__burger');
 const menuList = document.querySelector('.menu__list');
+const menuLinks = document.querySelectorAll('.menu__link');
 
 function toggleMenu() {
   burgerBtn.classList.toggle('active');
@@ -13,6 +14,7 @@ function toggleMenu() {
 }
 
 burgerBtn.addEventListener('click', toggleMenu);
+menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
 // Gallery
 

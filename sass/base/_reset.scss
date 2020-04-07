@@ -7,6 +7,10 @@
 html {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+
+  @include mq(large) {
+    font-size: 120%;
+  }
 }
 
 ul,

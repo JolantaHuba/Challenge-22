@@ -1,10 +1,6 @@
 .team {
     background-color: map-get($colors, primary);
 
-    @include mq(large) {
-        font-size: 1.2rem;
-    }
-
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -145,10 +141,6 @@
 
 .counters {
     background-color: map-get($colors, bg-minor);
-
-    @include mq(large) {
-        font-size: 1.2rem;
-    }
 
     &__wrapper {
         display: flex;

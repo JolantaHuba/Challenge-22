@@ -1,12 +1,10 @@
 .services {
-  @include mq(large) {
-    font-size: 1.2rem;
-  }
-
   &__list {
     display: flex;
     flex-wrap: wrap;
+
     @include mq(large) {
+
       &::before,
       &::after {
         display: block;
@@ -14,9 +12,11 @@
         height: 8em;
         flex-grow: 1;
       }
+
       &::before {
         background-color: map-get($colors, primary);
       }
+
       &::after {
         background-color: map-get($colors, primary-light);
       }
@@ -33,6 +33,7 @@
     padding: 1em 0.25em;
     color: map-get($colors, text-secondary);
     background-color: map-get($colors, primary);
+
     &:nth-child(even) {
       background-color: map-get($colors, primary-light);
     }
@@ -49,6 +50,7 @@
     display: block;
     font-size: 1.7em;
     padding-bottom: 0.25em;
+
     @include mq(large) {
       font-size: 2em;
     }
@@ -70,14 +72,18 @@
     display: flex;
     align-items: baseline;
     margin: 0.8em 1%;
+
     &--desktop {
       display: none;
     }
+
     @include mq(small) {
       flex-basis: 48%;
     }
+
     @include mq(large) {
       flex-basis: calc(100% / 3 - 2%);
+
       &--desktop {
         display: flex;
       }
@@ -94,12 +100,10 @@
 
   &__icon {
     margin: 0 auto;
-    @include icon-round(
-      1em,
+    @include icon-round(1em,
       map-get($colors, secondary),
       map-get($colors, text-secondary),
-      2.2
-    );
+      2.2);
   }
 
   &__name {
@@ -122,6 +126,7 @@
     min-height: 30vh;
     overflow: hidden;
     position: relative;
+
     @include mq(xsmall, 'orientation: landscape') {
       height: 50vh;
     }
@@ -133,10 +138,12 @@
     position: absolute;
     top: 0;
     left: 0;
+
     @include mq(xsmall, 'orientation: landscape') {
       max-width: 100%;
       top: -40%;
     }
+
     @include mq(xlarge) {
       top: -50%;
     }

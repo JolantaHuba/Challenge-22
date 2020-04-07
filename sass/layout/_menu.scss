@@ -14,9 +14,10 @@
   &__logo-img {
     width: 9rem;
     margin: 0.5rem 0;
+
     @include mq(large) {
-      max-width: 10rem;
-      margin: 1rem 0;
+      max-width: 155px;
+      margin: .8rem 0;
     }
   }
 
@@ -27,16 +28,20 @@
     background-color: transparent;
     border: none;
     z-index: 999;
+
     &-close {
       display: none;
       color: map-get($colors, bg-secondary);
     }
+
     &.active &-open {
       display: none;
     }
+
     &.active &-close {
       display: block;
     }
+
     @include mq(large) {
       display: none;
     }
@@ -56,9 +61,11 @@
     clip-path: circle(0% at 90% 4em);
     background-color: map-get($colors, secondary);
     transition: background-color 0.5s, clip-path 0.5s;
+
     &.active {
       clip-path: circle(80%);
     }
+
     @include mq(large) {
       clip-path: none;
       transition: none;
@@ -77,15 +84,19 @@
 
   &__item {
     flex-basis: 100%;
+
     @include mq('xsmall', 'orientation: landscape') {
       flex-basis: 34%;
     }
+
     &--search {
       display: none;
     }
+
     @include mq(large) {
       flex-basis: auto;
       display: flex;
+
       &--search {
         display: flex;
         align-items: center;
@@ -99,14 +110,13 @@
       border: none;
       background-color: transparent;
     }
+
     &-icon {
       cursor: pointer;
-      @include icon-round(
-        0.9rem,
+      @include icon-round(0.7rem,
         map-get($colors, secondary),
         map-get($colors, text-secondary),
-        2
-      );
+        2);
     }
   }
 
@@ -120,12 +130,14 @@
     text-align: center;
     text-transform: uppercase;
     transition: color 0.2s;
+
     @include mq(large) {
       display: flex;
       align-items: center;
-      font-size: 0.8rem;
-      margin-right: 1.5rem;
+      font-size: 0.7rem;
+      margin-right: 1.3rem;
       color: map-get($colors, heading);
+
       &::before {
         display: block;
         content: '';
@@ -139,9 +151,11 @@
         opacity: 0;
         transition: opacity 0.2s;
       }
+
       &:hover {
         color: map-get($colors, secondary);
       }
+
       &:hover::before {
         opacity: 1;
       }

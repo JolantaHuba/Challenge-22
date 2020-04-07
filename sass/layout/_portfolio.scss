@@ -3,10 +3,6 @@
   flex-direction: column;
   align-items: center;
 
-  @include mq(large) {
-    font-size: 1.2rem;
-  }
-
   &__controls {
     width: 100%;
     display: flex;

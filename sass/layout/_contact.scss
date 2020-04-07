@@ -1,0 +1,87 @@
+.contact {
+    background-color: map-get($colors, bg-minor);
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input-wrapper {
+        width: 90%;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 2.6em;
+        border-bottom: 1px solid rgba(map-get($colors, text), 0.5);
+
+        &:focus-within {
+            border-color: map-get($colors, primary-light);
+        }
+
+        &:focus-within .contact__input-icon {
+            color: map-get($colors, primary-light);
+        }
+
+        @include mq(small) {
+            width: 70%;
+        }
+
+        @include mq(large) {
+            width: 65%;
+        }
+    }
+
+    &__input-icon {
+        font-size: .9em;
+        vertical-align: -.1em;
+        color: rgba(map-get($colors, text), 0.8);
+    }
+
+    &__input {
+        font-size: .85em;
+        flex-grow: 1;
+        padding: .7em .6em;
+        color: rgba(map-get($colors, text), 0.8);
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: rgba(map-get($colors, text), 0.8);
+        }
+    }
+}
+
+.footer {
+    background-color: map-get($colors, primary);
+    padding: 2em 0;
+    text-align: center;
+
+    &__text {
+        font-size: .85em;
+        color: map-get($colors, text-secondary);
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    &__social-icon {
+        margin: 0 .3em;
+        transition: color .2s, background-color .2s;
+        @include icon-round(1em,
+            map-get($colors, bg-secondary),
+            map-get($colors, primary),
+            1.6);
+
+        @include mq(large) {
+            &:hover {
+                background-color: map-get($colors, secondary);
+                color: map-get($colors, bg-secondary);
+            }
+        }
+    }
+
+}
