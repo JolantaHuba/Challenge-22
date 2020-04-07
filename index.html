@@ -59,12 +59,15 @@
             ><img src="images/logo.png" alt="Smiley logo" class="menu__logo-img"
           /></a>
 
-        <button class="menu__burger" aria-label="Menu" aria-expanded="false">
-          <span class="menu__burger-open icon-bars"></span>
-          <span class="menu__burger-close icon-close"></span>
+        <button class="menu__burger-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="menu__burger-icon icon-bars"></span>
         </button>
 
         <ul class="menu__list">
+          <li class="menu__item menu__item--close">
+            <button class="menu__close-btn" aria-label="Close menu"><span class="menu__close-icon icon-close"></span>
+            </button>
+          </li>
           <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
           <li class="menu__item">
             <a href="#" class="menu__link">Services</a>
