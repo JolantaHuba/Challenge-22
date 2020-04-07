@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smiley</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -16,37 +15,37 @@
       <div class="minibar__container container">
         <div class="minibar__contacts">
           <p class="minibar__contact">
-            <span class="minibar__contact-icon icon-phone"></span>123 456 7890
+            <span class="minibar__contact-icon icon-phone" aria-hidden="true"></span>123 456 7890
           </p>
           <p class="minibar__contact">
-            <span class="minibar__contact-icon icon-envelope"></span>contact@smiley.com
+            <span class="minibar__contact-icon icon-envelope" aria-hidden="true"></span>contact@smiley.com
           </p>
         </div>
         <ul class="minibar__icons">
           <li>
-            <a href="http://www.facebook.com"
-                ><span class="minibar__round-icon icon-facebook"></span
-              ></a>
+            <a href="http://www.facebook.com" aria-label="Go to our Facebook site">
+              <span class="minibar__round-icon icon-facebook" aria-hidden="true"></span>
+            </a>
           </li>
           <li>
-            <a href="http://www.twitter.com"
-                ><span class="minibar__round-icon icon-twitter"></span
-              ></a>
+            <a href="http://www.twitter.com" aria-label="Go to our Twitter site">
+              <span class="minibar__round-icon icon-twitter" aria-hidden="true"></span>
+            </a>
           </li>
           <li>
-            <a href="http://www.pinterest.com"
-                ><span class="minibar__round-icon icon-pinterest-p"></span
-              ></a>
+            <a href="http://www.pinterest.com" aria-label="Go to our Pinterest site">
+              <span class="minibar__round-icon icon-pinterest-p" aria-hidden="true"></span>
+            </a>
           </li>
           <li>
-            <a href="http://www.google.com"
-                ><span class="minibar__round-icon icon-google-plus"></span
-              ></a>
+            <a href="http://www.google.com" aria-label="Go to our Google site">
+              <span class="minibar__round-icon icon-google-plus" aria-hidden="true"></span>
+            </a>
           </li>
           <li>
-            <a href="http://www.vimeo.com"
-                ><span class="minibar__round-icon icon-vimeo"></span
-              ></a>
+            <a href="http://www.vimeo.com" aria-label="Go to our Vimeo site">
+              <span class="minibar__round-icon icon-vimeo" aria-hidden="true"></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -60,12 +59,13 @@
           /></a>
 
         <button class="menu__burger-btn" aria-label="Open menu" aria-expanded="false">
-          <span class="menu__burger-icon icon-bars"></span>
+          <span class="menu__burger-icon icon-bars" aria-hidden="true"></span>
         </button>
 
         <ul class="menu__list">
           <li class="menu__item menu__item--close">
-            <button class="menu__close-btn" aria-label="Close menu"><span class="menu__close-icon icon-close"></span>
+            <button class="menu__close-btn"
+              aria-label="Close menu"><span class="menu__close-icon icon-close" aria-hidden="true"></span>
             </button>
           </li>
           <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
@@ -85,7 +85,7 @@
           </li>
           <li class="menu__item menu__item--search">
             <button class="menu__search-btn">
-              <span class="menu__search-icon icon-search"></span>
+              <span class="menu__search-icon icon-search" aria-label="Search"></span>
             </button>
           </li>
         </ul>
@@ -103,7 +103,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <a href="" class="btn btn--icon">
-            Learn more<span class="icon-arrow-right2"></span>
+            Learn more<span class="icon-arrow-right2" aria-hidden="true"></span>
           </a>
       </div>
       <div class="header__mouse">
@@ -115,27 +115,27 @@
     <section class="services">
       <ul class="services__list">
         <li class="services__item">
-          <span class="services__icon icon-filter_vintage"></span>
+          <span class="services__icon icon-filter_vintage" aria-hidden="true"></span>
           <span class="services__name">2d and 3d animation</span>
         </li>
         <li class="services__item">
-          <span class="services__icon icon-brightness_low"></span>
+          <span class="services__icon icon-brightness_low" aria-hidden="true"></span>
           <span class="services__name">Company brand identity</span>
         </li>
         <li class="services__item">
-          <span class="services__icon icon-devices"></span>
+          <span class="services__icon icon-devices" aria-hidden="true"></span>
           <span class="services__name">Responsive web design</span>
         </li>
         <li class="services__item">
-          <span class="services__icon icon-globe"></span>
+          <span class="services__icon icon-globe" aria-hidden="true"></span>
           <span class="services__name">Web development</span>
         </li>
         <li class="services__item">
-          <span class="services__icon icon-apple"></span>
+          <span class="services__icon icon-apple" aria-hidden="true"></span>
           <span class="services__name">App development</span>
         </li>
         <li class="services__item">
-          <span class="services__icon icon-camera"></span>
+          <span class="services__icon icon-camera" aria-hidden="true"></span>
           <span class="services__name">Photo & videography</span>
         </li>
       </ul>
@@ -143,7 +143,7 @@
       <ul class="features container container--small">
         <li class="features__item">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-pencil"></span>
+            <span class="features__icon icon-pencil" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Creative writing</strong>
@@ -155,7 +155,7 @@
         </li>
         <li class="features__item">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-heart"></span>
+            <span class="features__icon icon-heart" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Print design</strong>
@@ -167,7 +167,7 @@
         </li>
         <li class="features__item">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-share2"></span>
+            <span class="features__icon icon-share2" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Social media</strong>
@@ -179,7 +179,7 @@
         </li>
         <li class="features__item">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-crop"></span>
+            <span class="features__icon icon-crop" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Pixel perfect web</strong>
@@ -191,7 +191,7 @@
         </li>
         <li class="features__item">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-settings"></span>
+            <span class="features__icon icon-settings" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Front end development</strong>
@@ -203,7 +203,7 @@
         </li>
         <li class="features__item">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-brush"></span>
+            <span class="features__icon icon-brush" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Graphic design</strong>
@@ -215,7 +215,7 @@
         </li>
         <li class="features__item features__item--desktop">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-volume-mute"></span>
+            <span class="features__icon icon-volume-mute" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Audio and video</strong>
@@ -227,7 +227,7 @@
         </li>
         <li class="features__item features__item--desktop">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-flight_takeoff"></span>
+            <span class="features__icon icon-flight_takeoff" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">Optimized for speed</strong>
@@ -239,7 +239,7 @@
         </li>
         <li class="features__item features__item--desktop">
           <div class="features__icon-wrapper">
-            <span class="features__icon icon-access_time"></span>
+            <span class="features__icon icon-access_time" aria-hidden="true"></span>
           </div>
           <div class="features__text-wrapper">
             <strong class="features__name">24/7 human support</strong>
@@ -442,15 +442,19 @@
               <span class="team__member-job">Graphic designer</span>
               <ul class="team__member-socials">
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://facebook.com"><span class="icon-facebook"></span></a></li>
+                  <a class="team__member-link" href="https://facebook.com" aria-label="Facebook profile"><span class="icon-facebook" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+                  <a class="team__member-link" href="https://twitter.com" aria-label="Twitter profile"><span class="icon-twitter" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://dribble.com"><span class="icon-dribbble"></span></a></li>
+                  <a class="team__member-link" href="https://dribble.com" aria-label="Dribble profile"><span class="icon-dribbble" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://behance.com"><span class="icon-behance"></span></a></li>
+                  <a class="team__member-link" href="https://behance.com" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://pinterest.com"><span class="icon-pinterest-p"></span></a>
+                  <a class="team__member-link" href="https://pinterest.com" aria-label="Pinterest profile"><span class="icon-pinterest-p" aria-hidden="true"></span></a>
                 </li>
               </ul>
             </div>
@@ -464,15 +468,19 @@
               <span class="team__member-job">Fashion designer</span>
               <ul class="team__member-socials">
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://facebook.com"><span class="icon-facebook"></span></a></li>
+                  <a class="team__member-link" href="https://facebook.com" aria-label="Facebook profile"><span class="icon-facebook" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+                  <a class="team__member-link" href="https://twitter.com" aria-label="Twitter profile"><span class="icon-twitter" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://dribble.com"><span class="icon-dribbble"></span></a></li>
+                  <a class="team__member-link" href="https://dribble.com" aria-label="Dribble profile"><span class="icon-dribbble" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://behance.com"><span class="icon-behance"></span></a></li>
+                  <a class="team__member-link" href="https://behance.com" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://pinterest.com"><span class="icon-pinterest-p"></span></a>
+                  <a class="team__member-link" href="https://pinterest.com" aria-label="Pinterest profile"><span class="icon-pinterest-p" aria-hidden="true"></span></a>
                 </li>
               </ul>
             </div>
@@ -486,15 +494,19 @@
               <span class="team__member-job">UI/UX designer</span>
               <ul class="team__member-socials">
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://facebook.com"><span class="icon-facebook"></span></a></li>
+                  <a class="team__member-link" href="https://facebook.com" aria-label="Facebook profile"><span class="icon-facebook" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+                  <a class="team__member-link" href="https://twitter.com" aria-label="Twitter profile"><span class="icon-twitter" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://dribble.com"><span class="icon-dribbble"></span></a></li>
+                  <a class="team__member-link" href="https://dribble.com" aria-label="Dribble profile"><span class="icon-dribbble" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://behance.com"><span class="icon-behance"></span></a></li>
+                  <a class="team__member-link" href="https://behance.com" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
+                </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://pinterest.com"><span class="icon-pinterest-p"></span></a>
+                  <a class="team__member-link" href="https://pinterest.com" aria-label="Pinterest profile"><span class="icon-pinterest-p" aria-hidden="true"></span></a>
                 </li>
               </ul>
             </div>
@@ -505,22 +517,22 @@
       <div class="counters">
         <div class="counters__wrapper container container--bar">
           <div class="counters__item">
-            <span class="counters__item-icon icon-directions_car"></span>
+            <span class="counters__item-icon icon-directions_car" aria-hidden="true"></span>
             <span class="counters__item-counter" data-counter="delivered">0</span>
             <span class="counters__item-name">Projects delivered</span>
           </div>
           <div class="counters__item">
-            <span class="counters__item-icon icon-globe"></span>
+            <span class="counters__item-icon icon-globe" aria-hidden="true"></span>
             <span class="counters__item-counter" data-counter="webdesign">0</span>
             <span class="counters__item-name">Web design projects</span>
           </div>
           <div class="counters__item">
-            <span class="counters__item-icon icon-access_time"></span>
+            <span class="counters__item-icon icon-access_time" aria-hidden="true"></span>
             <span class="counters__item-counter" data-counter="hours">0</span>
             <span class="counters__item-name">Total hours</span>
           </div>
           <div class="counters__item">
-            <span class="counters__item-icon icon-coffee"></span>
+            <span class="counters__item-icon icon-coffee" aria-hidden="true"></span>
             <span class="counters__item-counter" data-counter="coffee">0</span>
             <span class="counters__item-name">Cup of coffee</span>
           </div>
@@ -687,8 +699,8 @@
           <div class="blog__article">
             <img src="images/news.jpg" alt="Article image" class="blog__article-img">
             <div class="blog__article-desc">
-              <a href="" class="blog__article-btn btn btn--circle">
-                <span class="icon-arrow-right2"></span>
+              <a href="#" class="blog__article-btn btn btn--circle" aria-label="Read more">
+                <span class="icon-arrow-right2" aria-hidden="true"></span>
               </a>
               <h3 class="blog__article-name">Boost your business</h3>
               <span class="blog__article-author">By Faridul Turixus</span>
@@ -699,8 +711,8 @@
           <div class="blog__article">
             <img src="images/news.jpg" alt="Article image" class="blog__article-img">
             <div class="blog__article-desc">
-              <a href="" class="blog__article-btn btn btn--circle">
-                <span class="icon-arrow-right2"></span>
+              <a href="#" class="blog__article-btn btn btn--circle" aria-label="Read more">
+                <span class="icon-arrow-right2" aria-hidden="true"></span>
               </a>
               <h3 class="blog__article-name">Boost your business</h3>
               <span class="blog__article-author">By Faridul Turixus</span>
@@ -711,8 +723,8 @@
           <div class="blog__article">
             <img src="images/news.jpg" alt="Article image" class="blog__article-img">
             <div class="blog__article-desc">
-              <a href="" class="blog__article-btn btn btn--circle">
-                <span class="icon-arrow-right2"></span>
+              <a href="#" class="blog__article-btn btn btn--circle" aria-label="Read more">
+                <span class="icon-arrow-right2" aria-hidden="true"></span>
               </a>
               <h3 class="blog__article-name">Boost your business</h3>
               <span class="blog__article-author">By Faridul Turixus</span>
@@ -737,11 +749,11 @@
 
         <form class="contact__form">
           <div class="contact__input-wrapper">
-            <span class="contact__input-icon icon-envelope"></span>
+            <span class="contact__input-icon icon-envelope" aria-hidden="true"></span>
             <input class="contact__input" type="email" aria-label="Your Email" placeholder="Your Email*" required>
           </div>
           <button type="submit"
-            class="btn btn--icon btn--rounded">Subscribe<span class="icon-cloud_done"></span></button>
+            class="btn btn--icon btn--rounded">Subscribe<span class="icon-cloud_done" aria-hidden="true"></span></button>
         </form>
       </div>
     </section>
@@ -750,28 +762,28 @@
       <p class="footer__text">2020 Coded by Jolanta Huba</p>
       <ul class="footer__socials">
         <li>
-          <a href="http://www.facebook.com"
-              ><span class="footer__social-icon icon-facebook"></span
+          <a href="http://www.facebook.com" aria-label="Go to our Facebook site"
+              ><span class="footer__social-icon icon-facebook" aria-hidden="true"></span
             ></a>
         </li>
         <li>
-          <a href="http://www.twitter.com"
-              ><span class="footer__social-icon icon-twitter"></span
+          <a href="http://www.twitter.com" aria-label="Go to our Twitter site"
+              ><span class="footer__social-icon icon-twitter" aria-hidden="true"></span
             ></a>
         </li>
         <li>
-          <a href="http://www.pinterest.com"
-              ><span class="footer__social-icon icon-pinterest-p"></span
+          <a href="http://www.pinterest.com" aria-label="Go to our Pinterest site"
+              ><span class="footer__social-icon icon-pinterest-p" aria-hidden="true"></span
             ></a>
         </li>
         <li>
-          <a href="http://www.google.com"
-              ><span class="footer__social-icon icon-google-plus"></span
+          <a href="http://www.google.com" aria-label="Go to our Google site"
+              ><span class="footer__social-icon icon-google-plus" aria-hidden="true"></span
             ></a>
         </li>
         <li>
-          <a href="http://www.vimeo.com"
-              ><span class="footer__social-icon icon-vimeo"></span
+          <a href="http://www.vimeo.com" aria-label="Go to our Vimeo site"
+              ><span class="footer__social-icon icon-vimeo" aria-hidden="true"></span
             ></a>
         </li>
       </ul>
