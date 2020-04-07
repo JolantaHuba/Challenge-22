@@ -1212,19 +1212,27 @@ a {
   }
 }
 
-.team__member-img {
-  display: block;
-  width: 25vw;
-  border: 0.3em solid #03a9f4;
-  border-radius: 50%;
+.team__member-img-wrapper {
   margin-right: .6em;
 }
 
 @media (min-width: 48em) {
-  .team__member-img {
+  .team__member-img-wrapper {
     width: 70%;
     margin-right: 0;
     margin: 1.5em 0 3em;
+  }
+}
+
+.team__member-img {
+  display: block;
+  width: 100%;
+  border: 0.3em solid #03a9f4;
+  border-radius: 50%;
+}
+
+@media (min-width: 48em) {
+  .team__member-img {
     border-width: .4em;
   }
 }
