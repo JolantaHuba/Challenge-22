@@ -187,7 +187,6 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
 }
 
 @media (min-width: 64em) {
@@ -317,6 +316,18 @@ a {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
 .minibar {
   background-color: #1976d2;
 }
@@ -401,6 +412,11 @@ a {
   left: 0;
   z-index: 998;
   background-color: #ffffff;
+}
+
+.menu.scrolled {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .menu__container {
@@ -953,7 +969,7 @@ a {
   }
 }
 
-.portfolio {
+.portfolio__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1623,7 +1639,7 @@ a {
   .pricing__item {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0 .5em;
   }
   .pricing__item:hover {

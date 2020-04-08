@@ -1,21 +1,43 @@
 "use strict"
 
+
+// Menu
+const menu = document.querySelector('.menu');
 const burgerBtn = document.querySelector('.menu__burger-btn');
-const closeBtn = document.querySelector('.menu__close-btn');
-const menuLinks = document.querySelectorAll('.menu__link');
+const menuElements = document.querySelectorAll('.menu__burger-btn, .menu__close-btn, .menu__link');
 const menuList = document.querySelector('.menu__list');
 
 function toggleMenu() {
-  burgerBtn.classList.toggle('active');
   menuList.classList.toggle('active');
-  if (burgerBtn.classList.contains('active')) {
+  if (menuList.classList.contains('active')) {
     burgerBtn.setAttribute('aria-expanded', 'true');
   } else burgerBtn.setAttribute('aria-expanded', 'false');
 }
 
-burgerBtn.addEventListener('click', toggleMenu);
-closeBtn.addEventListener('click', toggleMenu);
-menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
+menuElements.forEach(element => element.addEventListener('click', toggleMenu));
+
+//Menu shadow on scroll
+window.addEventListener('scroll', function () {
+  window.scrollY > 100 ?
+    menu.classList.add('scrolled') :
+    menu.classList.remove('scrolled');
+});
+
+// ScrollTo elements
+
+const scrollBtns = document.querySelectorAll('[data-scroll]');
+
+function scrollTo() {
+  const scrollTo = document.querySelector(`.${this.dataset.scroll}`).offsetTop;
+
+  window.scroll({
+    top: scrollTo - document.querySelector('.menu').offsetHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
+scrollBtns.forEach(btn => btn.addEventListener('click', scrollTo))
 
 // Gallery
 

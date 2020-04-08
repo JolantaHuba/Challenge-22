@@ -68,24 +68,24 @@
               aria-label="Close menu"><span class="menu__close-icon icon-close" aria-hidden="true"></span>
             </button>
           </li>
-          <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+          <li class="menu__item"><a href="#minibar" class="menu__link" data-scroll = "minibar">Home</a></li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Services</a>
-          </li>
-          <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Portfolio</a>
+            <a href="#services" class="menu__link" data-scroll = "services">Services</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Pricing</a>
+            <a href="#portfolio" class="menu__link" data-scroll = "portfolio">Portfolio</a>
           </li>
-          <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+          <li class="menu__item"><a href="#team" class="menu__link"  data-scroll = "team">Team</a></li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Contact Us</a>
+            <a href="#pricing" class="menu__link" data-scroll = "pricing">Pricing</a>
+          </li>
+          <li class="menu__item"><a href="#blog" class="menu__link" data-scroll = "blog">Blog</a></li>
+          <li class="menu__item">
+            <a href="#contact" class="menu__link" data-scroll = "contact">Contact Us</a>
           </li>
           <li class="menu__item menu__item--search">
-            <button class="menu__search-btn">
-              <span class="menu__search-icon icon-search" aria-label="Search"></span>
+            <button class="menu__search-btn" aria-label="Search">
+              <span class="menu__search-icon icon-search" aria-hidden="true"></span>
             </button>
           </li>
         </ul>
@@ -102,7 +102,7 @@
         <p class="header__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <a href="" class="btn btn--icon">
+        <a href="#services" class="btn btn--icon" data-scroll = "services">
             Learn more<span class="icon-arrow-right2" aria-hidden="true"></span>
           </a>
       </div>
@@ -113,6 +113,7 @@
 
     <!-- SERVICES -->
     <section class="services">
+      <h2 class="services__header visually-hidden">Our services</h2>
       <ul class="services__list">
         <li class="services__item">
           <span class="services__icon icon-filter_vintage" aria-hidden="true"></span>
@@ -252,174 +253,176 @@
       </ul>
 
       <div class="services__video-wrapper">
-        <video class="services__video" src="images/video.ogv" muted></video>
+        <video class="services__video" src="images/video.ogv" autoplay loop muted></video>
       </div>
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="portfolio container container--small">
-      <header class="section-header">
-        <h2 class="section-header__title">Portfolio</h2>
-        <p class="section-header__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-          aliquam.
-        </p>
-      </header>
+    <section class="portfolio">
+      <div class="portfolio__wrapper container container--small">
+        <header class="section-header">
+          <h2 class="section-header__title">Portfolio</h2>
+          <p class="section-header__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            aliquam.
+          </p>
+        </header>
 
-      <div class="portfolio__controls">
-        <button class="portfolio__control active" data-category="all">
-          All
-        </button>
-        <button class="portfolio__control" data-category="photo">
-          Photography
-        </button>
-        <button class="portfolio__control" data-category="brand">
-          Brand identity
-        </button>
-        <button class="portfolio__control" data-category="ui">UI/UX</button>
-        <button class="portfolio__control" data-category="webdev">
-          Web Development
-        </button>
-      </div>
+        <div class="portfolio__controls">
+          <button class="portfolio__control active" data-category="all">
+            All
+          </button>
+          <button class="portfolio__control" data-category="photo">
+            Photography
+          </button>
+          <button class="portfolio__control" data-category="brand">
+            Brand identity
+          </button>
+          <button class="portfolio__control" data-category="ui">UI/UX</button>
+          <button class="portfolio__control" data-category="webdev">
+            Web Development
+          </button>
+        </div>
 
-      <div class="portfolio__items">
-        <div class="portfolio__item" data-category="brand">
-          <img class="portfolio__img" src="images/portfolio-1.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+        <div class="portfolio__items">
+          <div class="portfolio__item" data-category="brand">
+            <img class="portfolio__img" src="images/portfolio-1.jpg" alt="Bacardi rum bottle">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Bacardi</span>
+              <span class="portfolio__item-desc">Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Bacard</span>
-            <span class="portfolio__item-desc">Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="webdev">
-          <img class="portfolio__img" src="images/portfolio-2.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="webdev">
+            <img class="portfolio__img" src="images/portfolio-2.jpg" alt="Book">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Book website</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Book website</span>
-            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="brand">
-          <img class="portfolio__img" src="images/portfolio-3.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="brand">
+            <img class="portfolio__img" src="images/portfolio-3.jpg" alt="Coffee cups">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Kopi Luwak</span>
+              <span class="portfolio__item-desc">Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Kopi Luwak</span>
-            <span class="portfolio__item-desc">Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="ui">
-          <img class="portfolio__img" src="images/portfolio-4.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="ui">
+            <img class="portfolio__img" src="images/portfolio-4.jpg" alt="Smartphone">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Web design</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Web design</span>
-            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="webdev">
-          <img class="portfolio__img" src="images/portfolio-5.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="webdev">
+            <img class="portfolio__img" src="images/portfolio-5.jpg" alt="Decorative bottle">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Web design</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Web design</span>
-            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="photo">
-          <img class="portfolio__img" src="images/portfolio-6.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="photo">
+            <img class="portfolio__img" src="images/portfolio-6.jpg" alt="Can of green tea">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Green Tea</span>
+              <span class="portfolio__item-desc">Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Green Tea</span>
-            <span class="portfolio__item-desc">Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="photo">
-          <img class="portfolio__img" src="images/portfolio-7.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="photo">
+            <img class="portfolio__img" src="images/portfolio-7.jpg" alt="Swell can">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Swell</span>
+              <span class="portfolio__item-desc">Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Swell</span>
-            <span class="portfolio__item-desc">Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="ui">
-          <img class="portfolio__img" src="images/portfolio-8.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="ui">
+            <img class="portfolio__img" src="images/portfolio-8.jpg" alt="Invitation mock-up">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">Invitation</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
             </div>
-            <span class="portfolio__item-name">Invitation</span>
-            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
           </div>
-        </div>
-        <div class="portfolio__item" data-category="webdev">
-          <img class="portfolio__img" src="images/portfolio-9.jpg" alt="" />
-          <div class="portfolio__item-overlay">
-            <div class="portfolio__item-controls">
-              <button class="portfolio__item-control">
-                <span class="portfolio__item-icon icon-zoom_in"></span>
-              </button>
-              <a href="" class="portfolio__item-control">
+          <div class="portfolio__item" data-category="webdev">
+            <img class="portfolio__img" src="images/portfolio-9.jpg" alt="Book mock-up">
+            <div class="portfolio__item-overlay">
+              <div class="portfolio__item-controls">
+                <button class="portfolio__item-control">
+                  <span class="portfolio__item-icon icon-zoom_in"></span>
+                </button>
+                <a href="#some_external_link" class="portfolio__item-control">
                   <span class="portfolio__item-icon icon-link"></span>
                 </a>
+              </div>
+              <span class="portfolio__item-name">B like Book</span>
+              <span class="portfolio__item-desc">UI/UX, Photoshop</span>
             </div>
-            <span class="portfolio__item-name">B like Book</span>
-            <span class="portfolio__item-desc">UI/UX, Photoshop</span>
           </div>
         </div>
+        <a href="#team" class="btn" data-scroll = "team">Learn more</a>
       </div>
-      <a href="" class="btn">Learn more</a>
     </section>
 
     <!-- TEAM -->
@@ -451,7 +454,7 @@
                   <a class="team__member-link" href="https://dribble.com" aria-label="Dribble profile"><span class="icon-dribbble" aria-hidden="true"></span></a>
                 </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://behance.com" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
+                  <a class="team__member-link" href="https://behance.net" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
                 </li>
                 <li class="team__member-social">
                   <a class="team__member-link" href="https://pinterest.com" aria-label="Pinterest profile"><span class="icon-pinterest-p" aria-hidden="true"></span></a>
@@ -477,7 +480,7 @@
                   <a class="team__member-link" href="https://dribble.com" aria-label="Dribble profile"><span class="icon-dribbble" aria-hidden="true"></span></a>
                 </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://behance.com" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
+                  <a class="team__member-link" href="https://behance.net" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
                 </li>
                 <li class="team__member-social">
                   <a class="team__member-link" href="https://pinterest.com" aria-label="Pinterest profile"><span class="icon-pinterest-p" aria-hidden="true"></span></a>
@@ -503,7 +506,7 @@
                   <a class="team__member-link" href="https://dribble.com" aria-label="Dribble profile"><span class="icon-dribbble" aria-hidden="true"></span></a>
                 </li>
                 <li class="team__member-social">
-                  <a class="team__member-link" href="https://behance.com" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
+                  <a class="team__member-link" href="https://behance.net" aria-label="Behance profile"><span class="icon-behance" aria-hidden="true"></span></a>
                 </li>
                 <li class="team__member-social">
                   <a class="team__member-link" href="https://pinterest.com" aria-label="Pinterest profile"><span class="icon-pinterest-p" aria-hidden="true"></span></a>
@@ -518,22 +521,22 @@
         <div class="counters__wrapper container container--bar">
           <div class="counters__item">
             <span class="counters__item-icon icon-directions_car" aria-hidden="true"></span>
-            <span class="counters__item-counter" data-counter="delivered">0</span>
+            <span class="counters__item-counter" data-counter="delivered"></span>
             <span class="counters__item-name">Projects delivered</span>
           </div>
           <div class="counters__item">
             <span class="counters__item-icon icon-globe" aria-hidden="true"></span>
-            <span class="counters__item-counter" data-counter="webdesign">0</span>
+            <span class="counters__item-counter" data-counter="webdesign"></span>
             <span class="counters__item-name">Web design projects</span>
           </div>
           <div class="counters__item">
             <span class="counters__item-icon icon-access_time" aria-hidden="true"></span>
-            <span class="counters__item-counter" data-counter="hours">0</span>
+            <span class="counters__item-counter" data-counter="hours"></span>
             <span class="counters__item-name">Total hours</span>
           </div>
           <div class="counters__item">
             <span class="counters__item-icon icon-coffee" aria-hidden="true"></span>
-            <span class="counters__item-counter" data-counter="coffee">0</span>
+            <span class="counters__item-counter" data-counter="coffee"></span>
             <span class="counters__item-name">Cup of coffee</span>
           </div>
         </div>
@@ -699,7 +702,7 @@
           <div class="blog__article">
             <img src="images/news.jpg" alt="Article image" class="blog__article-img">
             <div class="blog__article-desc">
-              <a href="#" class="blog__article-btn btn btn--circle" aria-label="Read more">
+              <a href="#some_external_link" class="blog__article-btn btn btn--circle" aria-label="Read more">
                 <span class="icon-arrow-right2" aria-hidden="true"></span>
               </a>
               <h3 class="blog__article-name">Boost your business</h3>
@@ -711,7 +714,7 @@
           <div class="blog__article">
             <img src="images/news.jpg" alt="Article image" class="blog__article-img">
             <div class="blog__article-desc">
-              <a href="#" class="blog__article-btn btn btn--circle" aria-label="Read more">
+              <a href="#some_external_link" class="blog__article-btn btn btn--circle" aria-label="Read more">
                 <span class="icon-arrow-right2" aria-hidden="true"></span>
               </a>
               <h3 class="blog__article-name">Boost your business</h3>
@@ -723,7 +726,7 @@
           <div class="blog__article">
             <img src="images/news.jpg" alt="Article image" class="blog__article-img">
             <div class="blog__article-desc">
-              <a href="#" class="blog__article-btn btn btn--circle" aria-label="Read more">
+              <a href="#some_external_link" class="blog__article-btn btn btn--circle" aria-label="Read more">
                 <span class="icon-arrow-right2" aria-hidden="true"></span>
               </a>
               <h3 class="blog__article-name">Boost your business</h3>
